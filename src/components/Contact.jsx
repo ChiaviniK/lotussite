@@ -33,7 +33,7 @@ const Contact = () => {
                                 <Phone className="mt-1" size={24} />
                                 <div>
                                     <p className="font-bold">Telefone</p>
-                                    <p className="text-green-100">(XX) XXXXX-XXXX</p>
+                                    <p className="text-green-100">(15) 99797-2481</p>
                                 </div>
                             </div>
                             <div className="flex items-start space-x-4">
