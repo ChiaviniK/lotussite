@@ -3,76 +3,77 @@ import { Mail, Phone, MapPin, Send } from 'lucide-react';
 
 const Contact = () => {
     return (
-        <section id="contact" className="py-20 bg-neutral">
-            <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">Entre em Contato</h2>
-                    <div className="w-20 h-1 bg-primary mx-auto"></div>
-                    <p className="mt-4 text-gray-600 max-w-2xl mx-auto">
-                        Estamos prontos para ajudar sua empresa a alcançar seus objetivos ambientais.
-                    </p>
-                </div>
+        <section id="contact" className="py-32 bg-white relative">
+            <div className="container mx-auto px-6">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 max-w-7xl mx-auto items-center">
+                    {/* Brand Info & Vision */}
+                    <div className="space-y-12">
+                        <div>
+                            <span className="text-accent text-sm font-bold tracking-[0.3em] uppercase mb-4 block">Fale Conosco</span>
+                            <h2 className="text-4xl md:text-6xl font-serif font-black text-primary leading-tight mb-8">
+                                Vamos Projetar o Seu <span className="text-gold italic">Legado</span>
+                            </h2>
+                            <p className="text-xl text-muted font-light leading-relaxed max-w-lg">
+                                Seja para uma consultoria técnica ou para o desenvolvimento de software sob medida, nossa equipe está pronta para integrar soluções sustentáveis ao seu negócio.
+                            </p>
+                        </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-                    {/* Contact Info */}
-                    <div className="bg-primary text-white p-10 rounded-2xl shadow-xl">
-                        <h3 className="text-2xl font-bold mb-6">Informações de Contato</h3>
-                        <p className="mb-8 text-green-100">
-                            Preencha o formulário ou entre em contato direto através dos nossos canais.
-                        </p>
-
-                        <div className="space-y-6">
-                            <div className="flex items-start space-x-4">
-                                <Mail className="mt-1" size={24} />
-                                <div>
-                                    <p className="font-bold">Email</p>
-                                    <p className="text-green-100">contato@lotusambiental.com.br</p>
+                        <div className="space-y-8">
+                            <div className="flex items-center space-x-6 group">
+                                <div className="p-4 bg-light rounded-full text-secondary group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                                    <Mail size={24} />
+                                </div>
+                                <div className="flex flex-col">
+                                    <span className="text-xs font-bold text-muted uppercase tracking-widest">Email</span>
+                                    <span className="text-lg font-medium text-primary">contato@lotusambiental.com.br</span>
                                 </div>
                             </div>
-                            <div className="flex items-start space-x-4">
-                                <Phone className="mt-1" size={24} />
-                                <div>
-                                    <p className="font-bold">Telefone</p>
-                                    <p className="text-green-100">(15) 99797-2481</p>
+                            <div className="flex items-center space-x-6 group">
+                                <div className="p-4 bg-light rounded-full text-secondary group-hover:bg-accent group-hover:text-white transition-all duration-300">
+                                    <Phone size={24} />
                                 </div>
-                            </div>
-                            <div className="flex items-start space-x-4">
-                                <MapPin className="mt-1" size={24} />
-                                <div>
-                                    <p className="font-bold">Localização</p>
-                                    <p className="text-green-100">Endereço da Empresa, Cidade - UF</p>
+                                <div className="flex flex-col">
+                                    <span className="text-xs font-bold text-muted uppercase tracking-widest">Telefone</span>
+                                    <span className="text-lg font-medium text-primary">(15) 99797-2481</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    {/* Contact Form */}
-                    <div className="bg-white p-10 rounded-2xl shadow-xl">
-                        <form className="space-y-6">
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-2">Nome Completo</label>
-                                <input type="text" className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="Seu nome" />
+                    {/* Contact Form Card */}
+                    <div className="bg-light/40 p-8 md:p-12 rounded-[2rem] border border-gray-100 shadow-2xl relative">
+                        <div className="absolute -top-4 -right-4 w-24 h-24 bg-accent/10 rounded-full blur-2xl"></div>
+                        
+                        <form className="space-y-8 relative z-10">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <div className="space-y-2">
+                                    <label className="text-xs font-bold text-primary uppercase tracking-widest ml-1">Nome</label>
+                                    <input type="text" className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-200 focus:border-accent outline-none transition-all placeholder:text-muted/40 font-medium" placeholder="Elias Silva" />
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="text-xs font-bold text-primary uppercase tracking-widest ml-1">Email</label>
+                                    <input type="email" className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-200 focus:border-accent outline-none transition-all placeholder:text-muted/40 font-medium" placeholder="elias@exemplo.com" />
+                                </div>
                             </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                                <input type="email" className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all" placeholder="seu@email.com" />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-2">Assunto</label>
-                                <select className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all">
-                                    <option>Selecione um assunto</option>
-                                    <option>Orçamento</option>
-                                    <option>Dúvida</option>
-                                    <option>Parceria</option>
-                                    <option>Outro</option>
+                            
+                            <div className="space-y-2">
+                                <label className="text-xs font-bold text-primary uppercase tracking-widest ml-1">Assunto</label>
+                                <select className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-200 focus:border-accent outline-none transition-all font-medium appearance-none">
+                                    <option>Selecione uma categoria</option>
+                                    <option>Software Customizado</option>
+                                    <option>Consultoria ESG</option>
+                                    <option>Licenciamento Ambiental</option>
+                                    <option>GHG / Carbono</option>
                                 </select>
                             </div>
-                            <div>
-                                <label className="block text-sm font-medium text-gray-700 mb-2">Mensagem</label>
-                                <textarea className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all h-32" placeholder="Como podemos ajudar?"></textarea>
+
+                            <div className="space-y-2">
+                                <label className="text-xs font-bold text-primary uppercase tracking-widest ml-1">Mensagem</label>
+                                <textarea className="w-full px-0 py-3 bg-transparent border-b-2 border-gray-200 focus:border-accent outline-none transition-all placeholder:text-muted/40 font-medium h-32 resize-none" placeholder="Conte-nos sobre o seu desafio..."></textarea>
                             </div>
-                            <button type="button" className="w-full bg-dark hover:bg-black text-white py-4 rounded-lg font-bold transition-colors flex items-center justify-center gap-2">
-                                Enviar Mensagem <Send size={18} />
+
+                            <button type="button" className="premium-button-primary w-full group flex items-center justify-center gap-3">
+                                Enviar Mensagem <Send size={20} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                             </button>
                         </form>
                     </div>
@@ -83,3 +84,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
