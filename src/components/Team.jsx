@@ -1,6 +1,5 @@
 import React from 'react';
 import felipeImg from '../assets/images/felipe.png';
-import pauloImg from '../assets/images/paulo.png';
 import luizImg from '../assets/images/luizChiavini.png';
 
 const Team = () => {
@@ -11,12 +10,7 @@ const Team = () => {
             image: felipeImg,
             bio: 'Estrategista em otimização de processos e eficiência operacional com foco em resultados sustentáveis.'
         },
-        {
-            name: 'Paulo',
-            role: 'Ecologia & Biodiversidade',
-            image: pauloImg,
-            bio: 'Especialista em ecossistemas tropicais, licenciamento complexo e preservação de biodiversidade.'
-        },
+
         {
             name: 'Luiz Jr',
             role: 'Data Science & ESG',
@@ -37,7 +31,7 @@ const Team = () => {
                     <div className="w-24 h-px bg-accent mx-auto"></div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-16 max-w-6xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-4xl mx-auto">
                     {team.map((member, index) => (
                         <div key={index} className="flex flex-col group">
                             <div className="relative mb-8 aspect-[4/5] overflow-hidden rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">

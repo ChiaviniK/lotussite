@@ -11,7 +11,7 @@ const Footer = () => {
         <footer className="bg-dark text-light py-20 relative overflow-hidden">
             {/* Background Accent */}
             <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-primary/20 rounded-full blur-[120px] -translate-x-1/2 translate-y-1/2"></div>
-            
+
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
                     {/* Brand Column */}
@@ -21,13 +21,13 @@ const Footer = () => {
                             <span className="text-3xl font-serif font-black tracking-tighter text-white uppercase italic">Lotus</span>
                         </div>
                         <p className="text-muted text-lg font-light max-w-sm leading-relaxed">
-                            Liderando a transformação sustentável através da engenharia de software e consultoria ambiental de alta performance.
+                            Liderando a transformação sustentável através da engenharia de software e consultoria de alta performance.
                         </p>
                         <div className="flex space-x-6">
-                            <a href="#" className="p-3 border border-white/10 rounded-full hover:bg-accent hover:border-accent hover:text-white transition-all duration-300">
+                            <a href="https://www.linkedin.com/in/luizchiavini/" target="_blank" rel="noopener noreferrer" className="p-3 border border-white/10 rounded-full hover:bg-accent hover:border-accent hover:text-white transition-all duration-300">
                                 <Linkedin size={20} />
                             </a>
-                            <a href="#" className="p-3 border border-white/10 rounded-full hover:bg-accent hover:border-accent hover:text-white transition-all duration-300">
+                            <a href="https://www.instagram.com/lotus.scm/" target="_blank" rel="noopener noreferrer" className="p-3 border border-white/10 rounded-full hover:bg-accent hover:border-accent hover:text-white transition-all duration-300">
                                 <Instagram size={20} />
                             </a>
                         </div>
@@ -50,7 +50,7 @@ const Footer = () => {
                         <div className="flex flex-col space-y-4">
                             <div className="flex items-center space-x-3 text-muted">
                                 <Mail size={18} className="text-accent" />
-                                <span className="font-light">contato@lotusambiental.com.br</span>
+                                <span className="font-light">lotusbr.company@gmail.com</span>
                             </div>
                             <div className="flex items-center space-x-3 text-muted">
                                 <Phone size={18} className="text-accent" />
@@ -65,7 +65,7 @@ const Footer = () => {
                     <p className="text-muted/60 text-sm font-light">
                         &copy; {new Date().getFullYear()} Lotus Desenvolvimento & Consultoria. Todos os direitos reservados.
                     </p>
-                    <button 
+                    <button
                         onClick={scrollToTop}
                         className="p-4 bg-primary/20 hover:bg-accent rounded-full text-white transition-all duration-300 group"
                     >
